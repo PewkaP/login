@@ -23,6 +23,7 @@ extension User_password {
     @NSManaged public var password_valid: Bool
     @NSManaged public var iduser: User?
 
+    
 }
 
 extension User_password : Identifiable {

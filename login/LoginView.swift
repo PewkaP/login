@@ -86,6 +86,18 @@
 import SwiftUI
 
 struct LoginView: View {
+    @Environment(\.managedObjectContext) private var viewContext
+
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \User.iduser, ascending: true)],
+        animation: .default)
+    private var users: FetchedResults<User>
+
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \User_password.iduser_password, ascending: true)],
+        animation: .default)
+    private var passwords: FetchedResults<User_password>
+    
     
     @State private var email: String = ""
     @State private var password: String = ""
@@ -131,7 +143,20 @@ struct LoginView: View {
                             Text("Forgot Password")
                                 .fontWeight(.medium)
                             
-                            Button(action: {}, label: {
+                            Button(action: {
+                                for user in users{
+                                    if email==user.email{
+                                        for pass in passwords{
+                                            if password==pass.password_hashed && pass.password_valid && pass.fk_iduser==user.iduser{
+                                                
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                                
+                                
+                            }, label: {
                                 CustomButton(title: "LOG IN", bgColor: "color1")
                             })
                         }.padding(.horizontal, 20)

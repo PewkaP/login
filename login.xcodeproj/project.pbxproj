@@ -19,6 +19,7 @@
 		2445818F2C0F61F5008A6FBB /* User_password+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2445818B2C0F61F5008A6FBB /* User_password+CoreDataProperties.swift */; };
 		244581902C0F61F5008A6FBB /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2445818C2C0F61F5008A6FBB /* User+CoreDataClass.swift */; };
 		244581912C0F61F5008A6FBB /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2445818D2C0F61F5008A6FBB /* User+CoreDataProperties.swift */; };
+		244581932C0F65E0008A6FBB /* LogginedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244581922C0F65E0008A6FBB /* LogginedView.swift */; };
 		247907BC2BFE3E91006B1954 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247907B92BFE3E91006B1954 /* LoginView.swift */; };
 		247907BD2BFE3E91006B1954 /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247907BA2BFE3E91006B1954 /* CustomViews.swift */; };
 		247907BE2BFE3E91006B1954 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247907BB2BFE3E91006B1954 /* SignUpView.swift */; };
@@ -57,6 +58,7 @@
 		2445818B2C0F61F5008A6FBB /* User_password+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User_password+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2445818C2C0F61F5008A6FBB /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		2445818D2C0F61F5008A6FBB /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		244581922C0F65E0008A6FBB /* LogginedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogginedView.swift; sourceTree = "<group>"; };
 		247907B92BFE3E91006B1954 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		247907BA2BFE3E91006B1954 /* CustomViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
 		247907BB2BFE3E91006B1954 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				2400186B2BFE3E0200CEDDEA /* loginApp.swift */,
 				2400186D2BFE3E0200CEDDEA /* ContentView.swift */,
 				247907BA2BFE3E91006B1954 /* CustomViews.swift */,
+				244581922C0F65E0008A6FBB /* LogginedView.swift */,
 				244581872C0F6008008A6FBB /* User.xcdatamodeld */,
 				247907B92BFE3E91006B1954 /* LoginView.swift */,
 				247907BB2BFE3E91006B1954 /* SignUpView.swift */,
@@ -285,6 +288,7 @@
 				247907BC2BFE3E91006B1954 /* LoginView.swift in Sources */,
 				247907BE2BFE3E91006B1954 /* SignUpView.swift in Sources */,
 				247907BD2BFE3E91006B1954 /* CustomViews.swift in Sources */,
+				244581932C0F65E0008A6FBB /* LogginedView.swift in Sources */,
 				2400186E2BFE3E0200CEDDEA /* ContentView.swift in Sources */,
 				244581902C0F61F5008A6FBB /* User+CoreDataClass.swift in Sources */,
 				2445818F2C0F61F5008A6FBB /* User_password+CoreDataProperties.swift in Sources */,

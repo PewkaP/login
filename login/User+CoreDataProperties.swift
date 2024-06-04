@@ -27,7 +27,7 @@ extension User {
     @NSManaged public var fk_idcity: Int32
     @NSManaged public var fk_idloyal_card: Int32
     @NSManaged public var password: User_password?
-
+    
 }
 
 extension User : Identifiable {
