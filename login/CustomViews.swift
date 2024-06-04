@@ -7,17 +7,14 @@
 
 import SwiftUI
 
-struct CustomViews: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+
 
 #Preview {
-    CustomViews()
+    CustomTextField(placeHolder: "lorem", imageName: "person.fill", bColor: "textColor1", tOpacity: 1.0, value: .constant(""))
 }
 
 struct CustomTextField: View {
+    
     var placeHolder: String
     var imageName: String
     var bColor: String
@@ -26,18 +23,19 @@ struct CustomTextField: View {
     
     var body: some View{
         HStack{
+            
             Image(systemName: imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 20, height:20)
                 .padding(.leading, 20)
-                .foregroundColor(Color(bColor).opacity(tOpacity))
+                //.foregroundColor(Color(bColor).opacity(tOpacity))
             
             if placeHolder == "Password" || placeHolder == "Confirm PassWord"{
                 ZStack(alignment: .leading){
                     if value.isEmpty{
                         Text(placeHolder)
-                            .foregroundColor(Color(bColor).opacity(tOpacity))
+                            //.foregroundColor(Color(bColor).opacity(tOpacity))
                             .padding(.leading,12)
                             .font(.system(size: 20))
                     }
@@ -56,7 +54,7 @@ struct CustomTextField: View {
                 
                     if value.isEmpty{
                         Text(placeHolder)
-                            .foregroundColor(Color(bColor).opacity(tOpacity))
+                            //.foregroundColor(Color(bColor).opacity(tOpacity))
                             .padding(.leading,12)
                             .font(.system(size: 20))
                     }
